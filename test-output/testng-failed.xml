@@ -10,6 +10,7 @@
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="searchTest" invocation-numbers="0 1 2"/>
           <include name="validateTitle"/>
         </methods>
       </class> <!-- tests.HomePageTest -->

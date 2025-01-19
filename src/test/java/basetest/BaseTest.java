@@ -23,10 +23,7 @@ public class BaseTest {
 	public void setup() {
 		prop = playwrightFactory.initProperties();
 		page = playwrightFactory.initBrowser(prop);
-		hp = new HomePage(page);
-		String title = hp.getHomePageTitle();
-		System.out.print("Base class Title is:" + title +"Home Page title is" + AppConstants.HOME_PAGE_TITLE);	
-		
+		hp = new HomePage(page);		
 	}
 	
 	@AfterTest

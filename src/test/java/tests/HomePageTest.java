@@ -8,7 +8,8 @@ import constants.AppConstants;
 
 public class HomePageTest extends BaseTest{
 	
-	@Test
+
+	@Test(enabled = true,priority = 0)
 	public void validateTitle() {
 		String title = hp.getHomePageTitle();
 		System.out.print("Title is:" + title +"Home Page title is" + AppConstants.HOME_PAGE_TITLE);	
@@ -24,7 +25,7 @@ public class HomePageTest extends BaseTest{
 			};	
 	}
 	
-	@Test(dataProvider = "getProductData")
+	@Test(dataProvider = "getProductData",priority = 1)
 	public void searchTest(String productname)
 	{
 		String pageHeading = hp.doSearch(productname);

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Regression" class="navigator-link">
-              <span class="suite-name border-failed">Regression</span>
+              <span class="suite-name border-passed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
-                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
-                    </span>
-                    <div class="method-list-content failed suite-Regression">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="tests.HomePageTest" class="method navigator-link" hash-for-method="validateTitle">validateTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Regression -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,17 +108,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression" title="tests.HomePageTest" class="method navigator-link" hash-for-method="searchTest(Samsung)">searchTest(Samsung)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Regression" title="tests.HomePageTest" class="method navigator-link" hash-for-method="searchTest(iMac)">searchTest(iMac)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Regression" title="tests.HomePageTest" class="method navigator-link" hash-for-method="searchTest(Macbook)">searchTest(Macbook)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.HomePageTest" class="method navigator-link" hash-for-method="searchTest(Samsung)">searchTest(Samsung)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression" title="tests.HomePageTest" class="method navigator-link" hash-for-method="validateTitle">validateTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -147,30 +138,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
-          <div class="suite-Regression-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateTitle">
-                  </a> <!-- validateTitle -->
-                  <span class="method-name">validateTitle</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Search - Samsung] but found [test]
-	at tests.HomePageTest.validateTitle(HomePageTest.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-failed -->
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -194,14 +161,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searchTest(Samsung)">
-                  </a> <!-- searchTest(Samsung) -->
-                  <span class="method-name">searchTest</span>
-                  <span class="parameters">(Samsung)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="searchTest(iMac)">
                   </a> <!-- searchTest(iMac) -->
                   <span class="method-name">searchTest</span>
@@ -214,6 +173,21 @@
                   </a> <!-- searchTest(Macbook) -->
                   <span class="method-name">searchTest</span>
                   <span class="parameters">(Macbook)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTest(Samsung)">
+                  </a> <!-- searchTest(Samsung) -->
+                  <span class="method-name">searchTest</span>
+                  <span class="parameters">(Samsung)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateTitle">
+                  </a> <!-- validateTitle -->
+                  <span class="method-name">validateTitle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -285,28 +259,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginUser_Passed')
 data.setCell(0, 2, 'tests.LoginSucess')
-data.setCell(0, 3, 1974);
+data.setCell(0, 3, 10625);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'searchTest')
 data.setCell(1, 2, 'tests.HomePageTest')
-data.setCell(1, 3, 1179);
+data.setCell(1, 3, 4648);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'searchTest')
 data.setCell(2, 2, 'tests.HomePageTest')
-data.setCell(2, 3, 561);
+data.setCell(2, 3, 1674);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'searchTest')
 data.setCell(3, 2, 'tests.HomePageTest')
-data.setCell(3, 3, 535);
+data.setCell(3, 3, 1147);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'validateTitle')
 data.setCell(4, 2, 'tests.HomePageTest')
-data.setCell(4, 3, 63);
+data.setCell(4, 3, 1034);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -332,13 +306,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginSucess</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
@@ -347,47 +314,46 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">189 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">searchTest(Macbook)</span>
-                <span class="method-start">22839 ms</span>
+                <span class="method-name">validateTitle</span>
+                <span class="method-start">31408 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginSucess</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginUser_Passed</span>
-                <span class="method-start">22839 ms</span>
+                <span class="method-start">31408 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <span class="method-name">searchTest(Macbook)</span>
+                <span class="method-start">34145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">searchTest(iMac)</span>
-                <span class="method-start">24196 ms</span>
+                <span class="method-start">38810 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchTest(Samsung)</span>
-                <span class="method-start">24744 ms</span>
+                <span class="method-start">40511 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">41698 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginSucess</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">24831 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">validateTitle</span>
-                <span class="method-start">25312 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">26100 ms</span>
+                <span class="method-start">42130 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
