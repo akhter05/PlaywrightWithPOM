@@ -2,32 +2,16 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-17T15:11:18 AEST" name="Regression" finished-at="2025-01-17T15:12:04 AEST" duration-ms="46419">
+  <suite started-at="2025-01-19T10:37:49 AEST" name="Regression" finished-at="2025-01-19T10:38:16 AEST" duration-ms="27059">
     <groups>
     </groups>
-    <test started-at="2025-01-17T15:11:18 AEST" name="HappyLoginScenarios" finished-at="2025-01-17T15:12:00 AEST" duration-ms="41868">
-      <class name="tests.LoginSucess">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-17T15:11:18 AEST" name="setup" finished-at="2025-01-17T15:11:48 AEST" duration-ms="29897" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginUser_Passed()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-17T15:11:49 AEST" name="loginUser_Passed" finished-at="2025-01-17T15:11:53 AEST" duration-ms="3776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUser_Passed -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-17T15:11:53 AEST" name="teardown" finished-at="2025-01-17T15:12:00 AEST" duration-ms="6720" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.LoginSucess -->
-    </test> <!-- HappyLoginScenarios -->
-    <test started-at="2025-01-17T15:11:18 AEST" name="HappyScenarios" finished-at="2025-01-17T15:12:04 AEST" duration-ms="46419">
+    <test started-at="2025-01-19T10:37:49 AEST" name="HappyScenarios" finished-at="2025-01-19T10:38:16 AEST" duration-ms="27059">
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-17T15:11:18 AEST" name="setup" finished-at="2025-01-17T15:11:48 AEST" duration-ms="29858" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-19T10:37:49 AEST" name="setup" finished-at="2025-01-19T10:38:12 AEST" duration-ms="22648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-17T15:11:49 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-17T15:11:51 AEST" duration-ms="2383" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-19T10:38:12 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-19T10:38:13 AEST" duration-ms="1179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-17T15:11:52 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-17T15:11:52 AEST" duration-ms="714" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-19T10:38:13 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-19T10:38:14 AEST" duration-ms="535" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-17T15:11:52 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-17T15:11:54 AEST" duration-ms="1485" status="PASS">
+        <test-method signature="searchTest(java.lang.String)[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-19T10:38:14 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-19T10:38:15 AEST" duration-ms="561" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="validateTitle()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-17T15:11:54 AEST" name="validateTitle" finished-at="2025-01-17T15:11:54 AEST" duration-ms="405" status="FAIL">
+        <test-method signature="validateTitle()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-19T10:38:15 AEST" name="validateTitle" finished-at="2025-01-19T10:38:15 AEST" duration-ms="63" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Search - Samsung] but found [test]]]>
@@ -100,11 +84,27 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-17T15:12:00 AEST" name="teardown" finished-at="2025-01-17T15:12:04 AEST" duration-ms="4504" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-19T10:38:15 AEST" name="teardown" finished-at="2025-01-19T10:38:16 AEST" duration-ms="538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.HomePageTest -->
     </test> <!-- HappyScenarios -->
+    <test started-at="2025-01-19T10:37:49 AEST" name="HappyLoginScenarios" finished-at="2025-01-19T10:38:15 AEST" duration-ms="26072">
+      <class name="tests.LoginSucess">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-19T10:37:49 AEST" name="setup" finished-at="2025-01-19T10:38:12 AEST" duration-ms="22815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginUser_Passed()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-19T10:38:12 AEST" name="loginUser_Passed" finished-at="2025-01-19T10:38:14 AEST" duration-ms="1974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUser_Passed -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-19T10:38:14 AEST" name="teardown" finished-at="2025-01-19T10:38:15 AEST" duration-ms="821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.LoginSucess -->
+    </test> <!-- HappyLoginScenarios -->
   </suite> <!-- Regression -->
 </testng-results>

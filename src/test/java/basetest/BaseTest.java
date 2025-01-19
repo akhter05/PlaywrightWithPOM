@@ -9,6 +9,7 @@ import com.microsoft.playwright.Page;
 
 import Pages.HomePage;
 import Pages.LoginPage;
+import constants.AppConstants;
 import playwrightfactory.PlayWrightFactory;
 
 public class BaseTest {
@@ -23,6 +24,9 @@ public class BaseTest {
 		prop = playwrightFactory.initProperties();
 		page = playwrightFactory.initBrowser(prop);
 		hp = new HomePage(page);
+		String title = hp.getHomePageTitle();
+		System.out.print("Base class Title is:" + title +"Home Page title is" + AppConstants.HOME_PAGE_TITLE);	
+		
 	}
 	
 	@AfterTest
