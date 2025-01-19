@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="tests" thread-count = "2">
+
+    <listeners>
+		<listener class-name="utilities.ExtentReportListener" />
+	</listeners>
+	
+    <test name="HappyScenarios">
+        <classes>
+            <class name="tests.HomePageTest"/>
+        </classes>
+    </test>
+    <test name="HappyLoginScenarios">
+        <classes>
+            <class name="tests.LoginSucess"/>
+        </classes>
+    </test>
+</suite>
