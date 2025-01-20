@@ -4,20 +4,20 @@ pipeline {
     stages {
         stage('Dependencies') {
             steps {
-                script {
+                
                 echo 'Installing dependencies (e.g., in pom.xml)'
+                git branch: 'main', url: 'https://github.com/akhter05/PlaywrightWithPOM'                  
                 sh 'mvn clean install -DskipTests -f pom.xml -X'
-                }
+                
             }
         }
 
         stage('Regression Automation Test') {
             steps {
-                script {
+                
                     echo 'Running Regression Automation Tests...'
-                     //git branch: 'main', url: 'https://github.com/akhter05/PlaywrightWithPOM'
-                     sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/testrunners/testRegression.xml'
-                }
+                    sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/testrunners/testRegression.xml'
+                
             }
         }
 
