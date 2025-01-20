@@ -33,7 +33,8 @@ public class ExtentReportListener implements ITestListener {
 
 		// String timeStamp =new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new
 		// Date());
-		repName = "Test-Report" + currentdatetimestamp + ".html";
+		//repName = "Test-Report" + currentdatetimestamp + ".html";
+		repName = "Test-Extent-Report.html";
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName); // Path to report
 
 		sparkReporter.config().setDocumentTitle("Automation Report"); // Title of report

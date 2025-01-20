@@ -1,0 +1,49 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    echo 'Building...'
+                
+                    sh 'mvn clean install'
+                }
+            }
+        }
+
+        stage('Regression Automation Test') {
+            steps {
+                script {
+                    echo 'Running Regression Automation Tests...'
+                     git 'https://github.com/akhter05/PlaywrightWithPOM'
+                     sh "mvn clean test -Dsurefire.suiteXmlFiles=/playwrightPom/src/test/java/testrunners/testRegression.xml"
+                }
+            }
+        }
+
+        stage('Publish Extent Report') {
+            steps {
+                script {
+                    echo 'Publishing Extent Report...'
+                    // Publish the extent report (modify as per your reporting setup)
+                    publishHTML(target: [
+                        keepAll: true,
+                        reportDir: 'reports',
+                        reportFiles: 'Test-Extent-Report.html',
+                        reportName: 'Extent Report'
+                    ])
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            script {
+                echo 'Pipeline Finished!'
+                // Any cleanup tasks can be done here
+            }
+        }
+    }
+}

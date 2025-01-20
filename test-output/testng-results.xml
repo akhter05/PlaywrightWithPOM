@@ -1,70 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-20T09:35:40 AEST" name="Regression" finished-at="2025-01-20T09:36:50 AEST" duration-ms="70090">
+  <suite started-at="2025-01-20T10:39:48 AEST" name="Regression" finished-at="2025-01-20T10:40:29 AEST" duration-ms="41678">
     <groups>
     </groups>
-    <test started-at="2025-01-20T09:35:40 AEST" name="HappyScenarios" finished-at="2025-01-20T09:36:33 AEST" duration-ms="53280">
-      <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-20T09:35:40 AEST" name="setup" finished-at="2025-01-20T09:36:11 AEST" duration-ms="30140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateTitle()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-20T09:36:12 AEST" name="validateTitle" finished-at="2025-01-20T09:36:13 AEST" duration-ms="1034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateTitle -->
-        <test-method signature="searchTest(java.lang.String)[pri:1, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-20T09:36:14 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-20T09:36:19 AEST" duration-ms="4648" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Macbook]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:1, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-20T09:36:19 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-20T09:36:21 AEST" duration-ms="1674" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iMac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method signature="searchTest(java.lang.String)[pri:1, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-20T09:36:21 AEST" name="searchTest" data-provider="getProductData" finished-at="2025-01-20T09:36:22 AEST" duration-ms="1147" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Samsung]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HomePageTest@4562e04d]" started-at="2025-01-20T09:36:22 AEST" name="teardown" finished-at="2025-01-20T09:36:33 AEST" duration-ms="11372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tests.HomePageTest -->
-    </test> <!-- HappyScenarios -->
-    <test started-at="2025-01-20T09:35:40 AEST" name="HappyLoginScenarios" finished-at="2025-01-20T09:36:50 AEST" duration-ms="70090">
+    <test started-at="2025-01-20T10:39:48 AEST" name="HappyLoginScenarios" finished-at="2025-01-20T10:40:29 AEST" duration-ms="41678">
       <class name="tests.LoginSucess">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-20T09:35:40 AEST" name="setup" finished-at="2025-01-20T09:36:11 AEST" duration-ms="30329" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.LoginSucess@4f83df68]" started-at="2025-01-20T10:39:48 AEST" name="setup" finished-at="2025-01-20T10:40:12 AEST" duration-ms="23735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginUser_Passed()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-20T09:36:12 AEST" name="loginUser_Passed" finished-at="2025-01-20T09:36:22 AEST" duration-ms="10625" status="PASS">
+        <test-method signature="loginUser_Passed()[pri:0, instance:tests.LoginSucess@4f83df68]" started-at="2025-01-20T10:40:12 AEST" name="loginUser_Passed" finished-at="2025-01-20T10:40:14 AEST" duration-ms="2113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUser_Passed -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginSucess@327514f]" started-at="2025-01-20T09:36:22 AEST" name="teardown" finished-at="2025-01-20T09:36:50 AEST" duration-ms="27708" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.LoginSucess@4f83df68]" started-at="2025-01-20T10:40:14 AEST" name="teardown" finished-at="2025-01-20T10:40:29 AEST" duration-ms="15016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
