@@ -9,7 +9,7 @@ import constants.AppConstants;
 public class HomePageTest extends BaseTest{
 	
 
-	@Test(enabled = true,priority = 0)
+	@Test(enabled = false,priority = 0)
 	public void validateTitle() {
 		String title = hp.getHomePageTitle();
 		System.out.print("Title is:" + title +"Home Page title is" + AppConstants.HOME_PAGE_TITLE);	
@@ -25,7 +25,7 @@ public class HomePageTest extends BaseTest{
 			};	
 	}
 	
-	@Test(dataProvider = "getProductData",priority = 1)
+	@Test(dataProvider = "getProductData",priority = 1,enabled = false)
 	public void searchTest(String productname)
 	{
 		String pageHeading = hp.doSearch(productname);

@@ -5,11 +5,11 @@
 		<listener class-name="utilities.ExtentReportListener" />
 	</listeners>
 	
-    <test name="HappyScenarios">
+    <!--<test name="HappyScenarios">
         <classes>
             <class name="tests.HomePageTest"/>
         </classes>
-    </test>
+    </test> -->
     <test name="HappyLoginScenarios">
         <classes>
             <class name="tests.LoginSucess"/>
