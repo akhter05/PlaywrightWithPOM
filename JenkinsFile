@@ -14,8 +14,8 @@ pipeline {
             steps {
                 script {
                     echo 'Running Regression Automation Tests...'
-                     git 'https://github.com/akhter05/PlaywrightWithPOM'
-                     sh "mvn clean test -Dsurefire.suiteXmlFiles=/playwrightPom/src/test/java/testrunners/testRegression.xml"
+                     git branch: 'main', url: 'https://github.com/akhter05/PlaywrightWithPOM'
+                     sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/testrunners/testRegression.xml'
                 }
             }
         }
