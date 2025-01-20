@@ -2,10 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Dependencies') {
             steps {
                 script {
-                    echo 'Building...'
+                echo 'Installing dependencies (e.g., in pom.xml)'
+                sh 'mvn clean install -DskipTests -f pom.xml -X'
                 }
             }
         }
@@ -14,7 +15,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running Regression Automation Tests...'
-                     git branch: 'main', url: 'https://github.com/akhter05/PlaywrightWithPOM'
+                     //git branch: 'main', url: 'https://github.com/akhter05/PlaywrightWithPOM'
                      sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/testrunners/testRegression.xml'
                 }
             }
