@@ -6,10 +6,8 @@ pipeline {
             steps {
                 
                 echo 'Installing dependencies (e.g., in pom.xml)'
-                git branch: 'main', url: 'https://github.com/akhter05/PlaywrightWithPOM'                  
-                sh '''
-                 mvn clean install -DskipTests -f pom.xml -X
-                 '''
+                git branch: 'main', url: 'https://github.com/akhter05/PlaywrightWithPOM.git'                  
+                sh 'mvn clean install -DskipTests -f pom.xml'
                 
             }
         }
@@ -18,9 +16,7 @@ pipeline {
             steps {
                 
                     echo 'Running Regression Automation Tests...'
-                    sh '''
-                     mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/testrunners/testRegression.xml
-                     '''
+                    sh 'mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/testrunners/testRegression.xml'
                 
             }
         }
