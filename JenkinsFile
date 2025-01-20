@@ -7,7 +7,7 @@ pipeline {
                 
                 echo 'Installing dependencies (e.g., in pom.xml)'
                 //git branch: 'main', url: 'https://github.com/akhter05/PlaywrightWithPOM'                  
-                powershell '''
+                bat '''
                  mvn clean install -DskipTests -f pom.xml -X
                  '''
                 
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 
                     echo 'Running Regression Automation Tests...'
-                    powershell '''
+                    bat '''
                      mvn clean test -Dsurefire.suiteXmlFiles=src/test/java/testrunners/testRegression.xml
                      '''
                 
