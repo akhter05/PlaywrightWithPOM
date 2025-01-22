@@ -2,6 +2,7 @@ package playwrightfactory;
 
 import java.io.FileInputStream;
 import java.nio.file.Paths;
+import java.util.Base64;
 import java.util.Properties;
 
 import com.microsoft.playwright.Browser;
@@ -86,12 +87,17 @@ public class PlayWrightFactory {
 	
 	public static String takeScreenShot() {
 		
-		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + System.currentTimeMillis() + ".png";
-		System.out.print("Path for sc is:" + targetFilePath);
-		getPage().screenshot(new Page.ScreenshotOptions().setPath(Paths.get(targetFilePath))
-				.setFullPage(true));
+		String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + System.currentTimeMillis() + ".png";		
 
-		return targetFilePath;
+		
+		//byte[] buffer = getPage().screenshot(new Page.ScreenshotOptions().setPath(Paths.get(targetFilePath))
+		//		.setFullPage(true));
+		
+		byte[] buffer = getPage().screenshot(new Page.ScreenshotOptions().setPath(Paths.get(targetFilePath))
+				.setFullPage(true));
+		String base64TargetFilePath = Base64.getEncoder().encodeToString(buffer);
+
+		return base64TargetFilePath;
 		
 	}
 	
