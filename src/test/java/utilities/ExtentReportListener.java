@@ -13,6 +13,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
@@ -63,6 +64,7 @@ public class ExtentReportListener implements ITestListener {
 		
 		try {
 			String imgPath = PlayWrightFactory.takeScreenShot();
+			test.fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(imgPath, result.getMethod().getMethodName()).build());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e) {
 			e.printStackTrace();
