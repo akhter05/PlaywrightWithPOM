@@ -19,6 +19,10 @@ public class BaseTest {
 	protected HomePage hp;
 	protected Properties prop;
 	
+	/**
+	 * Base test Class
+	 */
+	
 	@BeforeTest
 	public void setup() {
 		prop = playwrightFactory.initProperties();
