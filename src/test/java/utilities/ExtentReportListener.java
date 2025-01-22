@@ -64,7 +64,7 @@ public class ExtentReportListener implements ITestListener {
 		
 		try {
 			String imgPath = PlayWrightFactory.takeScreenShot();
-			test.fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(imgPath, result.getMethod().getMethodName()).build());
+			test.pass(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(imgPath, result.getMethod().getMethodName()).build());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -80,6 +80,7 @@ public class ExtentReportListener implements ITestListener {
 
 		try {
 			String imgPath = PlayWrightFactory.takeScreenShot();
+			test.fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromBase64String(imgPath, result.getMethod().getMethodName()).build());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e) {
 			e.printStackTrace();
