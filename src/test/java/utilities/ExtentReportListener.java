@@ -60,6 +60,13 @@ public class ExtentReportListener implements ITestListener {
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.PASS, result.getName() + " got sucessully executed");
+		
+		try {
+			String imgPath = PlayWrightFactory.takeScreenShot();
+			test.addScreenCaptureFromPath(imgPath);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 	}
 
